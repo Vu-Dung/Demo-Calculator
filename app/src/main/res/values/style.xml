@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="button_style">
+        <item name="android:background">@color/color_orange</item>
+        <item name="layout_constraintWidth_default">percent</item>
+        <item name="layout_constraintHeight_default">percent</item>
+        <item name="layout_constraintWidth_percent">0.22</item>
+        <item name="layout_constraintHeight_percent">0.15</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">40dp</item>
+    </style>
+
+    <style name="text_style">
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textSize">40dp</item>
+    </style>
+</resources>

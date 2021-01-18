@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Calculator">
+    <fragment
+        android:id="@+id/viewFragment"
+        class="com.example.calculator.ViewFragment"
+        android:layout_width="411dp"
+        android:layout_height="208dp"
+        android:layout_weight="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout="@layout/fragment_view"></fragment>
+
+    <fragment
+        android:id="@+id/buttonFragment"
+        class="com.example.calculator.ButtonFragment"
+        android:layout_width="407dp"
+        android:layout_height="454dp"
+        android:layout_marginRight="5dp"
+        android:layout_weight="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/viewFragment"
+        tools:layout="@layout/fragment_button"></fragment>
+</android.support.constraint.ConstraintLayout>

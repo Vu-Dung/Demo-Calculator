@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/buttonAC"
+        style="@style/button_style"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/gradient_button_extens"
+        android:text="@string/label_AC"
+        app:layout_constraintBottom_toTopOf="@id/button7"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <Button
+        android:id="@+id/buttonOpen"
+        style="@style/button_style"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/gradient_button_extens"
+        android:text="@string/label_open"
+        app:layout_constraintBottom_toTopOf="@id/button8"
+        app:layout_constraintLeft_toRightOf="@id/buttonAC" />
+
+    <Button
+        android:id="@+id/buttonClose"
+        style="@style/button_style"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/gradient_button_extens"
+        android:text="@string/label_close"
+        app:layout_constraintBottom_toTopOf="@id/button9"
+        app:layout_constraintLeft_toRightOf="@id/buttonOpen" />
+
+    <Button
+        android:id="@+id/buttonDiv"
+        style="@style/button_style"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/gradient_button_cal"
+        android:text="@string/label_div"
+        app:layout_constraintBottom_toTopOf="@id/buttonMul"
+        app:layout_constraintLeft_toRightOf="@id/buttonClose" />
+
+    <Button
+        android:id="@+id/button0"
+        style="@style/button_style"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginEnd="304dp"
+        android:layout_marginBottom="22dp"
+        android:background="@drawable/gradien_button_number"
+        android:text="@string/label_0"
+        android:onClick="onClick"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/buttonDot"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/buttonDot"
+        style="@style/button_style"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginBottom="22dp"
+        android:background="@drawable/gradien_button_number"
+        android:text="@string/label_dot"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/button0" />
+
+    <Button
+        android:id="@+id/buttonClear"
+        style="@style/button_style"
+
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginBottom="22dp"
+        android:background="@drawable/gradien_button_number"
+        android:text="@string/label_C"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/buttonDot" />
+
+    <Button
+        android:id="@+id/buttonEqual"
+        style="@style/button_style"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginBottom="22dp"
+        android:background="@drawable/gradient_button_cal"
+        android:text="@string/label_equal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/buttonClear" />
+
+    <Button
+        android:id="@+id/button1"
+        style="@style/button_style"
+
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginEnd="304dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/gradien_button_number"
+        android:text="@string/label_1"
+        app:layout_constraintBottom_toTopOf="@id/button0"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <Button
+        android:id="@+id/button2"
+        style="@style/button_style"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/gradien_button_number"
+        android:text="@string/label_2"
+        app:layout_constraintBottom_toTopOf="@id/buttonDot"
+        app:layout_constraintLeft_toRightOf="@id/button1" />
+
+    <Button
+        android:id="@+id/button3"
+        style="@style/button_style"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/gradien_button_number"
+        android:text="@string/label_3"
+        app:layout_constraintBottom_toTopOf="@id/buttonClear"
+        app:layout_constraintLeft_toRightOf="@id/button2" />
+
+    <Button
+        android:id="@+id/buttonAdd"
+        style="@style/button_style"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/gradient_button_cal"
+        android:text="@string/label_add"
+        app:layout_constraintBottom_toTopOf="@id/buttonEqual"
+        app:layout_constraintLeft_toRightOf="@id/button3" />
+
+    <Button
+        android:id="@+id/button4"
+        style="@style/button_style"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginEnd="304dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/gradien_button_number"
+        android:text="@string/label_4"
+        app:layout_constraintBottom_toTopOf="@id/button1"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <Button
+        android:id="@+id/button5"
+        style="@style/button_style"
+        android:layout_width="0dp"
+
+        android:layout_height="0dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/gradien_button_number"
+        android:text="@string/label_5"
+        app:layout_constraintBottom_toTopOf="@id/button2"
+        app:layout_constraintLeft_toRightOf="@id/button4" />
+
+    <Button
+        android:id="@+id/button6"
+        style="@style/button_style"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/gradien_button_number"
+        android:text="@string/label_6"
+        app:layout_constraintBottom_toTopOf="@id/button3"
+        app:layout_constraintLeft_toRightOf="@id/button5" />
+
+    <Button
+        android:id="@+id/buttonSub"
+        style="@style/button_style"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/gradient_button_cal"
+        android:text="@string/label_sub"
+        app:layout_constraintBottom_toTopOf="@id/buttonAdd"
+        app:layout_constraintLeft_toRightOf="@id/button6" />
+
+    <Button
+        android:id="@+id/button7"
+        style="@style/button_style"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/gradien_button_number"
+        android:text="@string/label_7"
+        app:layout_constraintBottom_toTopOf="@id/button4"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <Button
+        android:id="@+id/button8"
+        style="@style/button_style"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/gradien_button_number"
+        android:text="@string/label_8"
+        app:layout_constraintBottom_toTopOf="@id/button5"
+        app:layout_constraintLeft_toRightOf="@id/button7" />
+
+    <Button
+        android:id="@+id/button9"
+        style="@style/button_style"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/gradien_button_number"
+        android:text="@string/label_9"
+        app:layout_constraintBottom_toTopOf="@id/button6"
+        app:layout_constraintLeft_toRightOf="@id/button8" />
+
+    <Button
+        android:id="@+id/buttonMul"
+        style="@style/button_style"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/gradient_button_cal"
+        android:text="@string/label_mul"
+        app:layout_constraintBottom_toTopOf="@id/buttonSub"
+        app:layout_constraintLeft_toRightOf="@id/button9" />
+</android.support.constraint.ConstraintLayout>
